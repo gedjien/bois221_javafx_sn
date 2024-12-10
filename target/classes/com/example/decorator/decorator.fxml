@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.decorator.Controller">
+    <Pane fx:id="paintPane" prefHeight="400.0" prefWidth="400.0" />
+    <CheckBox fx:id="checkBoxStar" text="Star" onAction="#decorateTree" />
+    <CheckBox fx:id="checkBoxGarland" text="Garland" onAction="#decorateTree" />
+    <CheckBox fx:id="checkBoxPresents" text="Presents" onAction="#decorateTree" />
+    <Button text="Добавить все" onAction="#addAll" />
+    <Button text="Убрать все" onAction="#removeAll" />
+</VBox>
