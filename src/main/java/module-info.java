@@ -1,8 +1,8 @@
-module com.example.shape {
+module com.example.factory {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens com.example.shape to javafx.fxml;
-    exports com.example.shape;
+    opens com.example.factory to javafx.fxml;
+    exports com.example.factory;
 }
