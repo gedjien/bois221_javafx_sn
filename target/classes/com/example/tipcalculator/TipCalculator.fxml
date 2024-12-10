@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.tipcalculator.TipCalculatorController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <spacing>10</spacing>
+
+    <FlowPane hgap="10" vgap="10">
+        <Label text="Сумма в чеке:"/>
+        <TextField fx:id="sumTextField" prefWidth="100"/>
+    </FlowPane>
+
+    <HBox spacing="10">
+        <Button text="15%" fx:id="tipButton1"/>
+        <Label fx:id="tipLabel1" text="Расчет"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Button text="10%" fx:id="tipButton2"/>
+        <Label fx:id="tipLabel2" text="Расчет"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Button text="3%" fx:id="tipButton3"/>
+        <Label fx:id="tipLabel3" text="Расчет"/>
+    </HBox>
+</VBox>
