@@ -14,8 +14,8 @@
 - [Итератор (Task 4)](https://github.com/gedjien/bois221_javafx_sn/tree/Task4_SlideShowIterator)
 - [Абстрактная фабрика (Task 5)](https://github.com/gedjien/bois221_javafx_sn/tree/Task5_IndicatorApp)
 - [x] Демонстрация структур данных
-- [Адаптер (Task 7)](https://github.com/gedjien/bois221_javafx_sn/tree/Task7_observer)
-- [Наблюдатель (Task 10)](https://github.com/gedjien/bois221_javafx_sn/tree/Task10_adapter)
+- [Наблюдатель (Task 7)](https://github.com/gedjien/bois221_javafx_sn/tree/Task7_observer)
+- [Адаптер (Task 10)](https://github.com/gedjien/bois221_javafx_sn/tree/Task10_adapter)
 - [ ] Прочее
 - [Стратегия (Task 9. Стратегия)](https://github.com/gedjien/bois221_javafx_sn/tree/Task9_strategy)
 - [Калькулятор (Task 0. Делегирование)](https://github.com/gedjien/bois221_javafx_sn/tree/Task0_TipCalculator)
