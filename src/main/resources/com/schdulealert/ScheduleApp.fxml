@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.stage.FileChooser?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schdulealert.Controller" spacing="10" alignment="center" style="-fx-background-color: #f4f4f4; -fx-padding: 20;">
+    <Label fx:id="scheduleLabel" text="Следующая пара: Не определена" style="-fx-font-size: 16px; -fx-text-fill: #333;" />
+    <Label fx:id="timeLabel" text="Время: 00:00 - 00:00" style="-fx-font-size: 14px; -fx-text-fill: #333;" />
+    <Label fx:id="timeRemainingLabel" text="До начала: 0 минут" style="-fx-font-size: 14px; -fx-text-fill: #333;" />
+
+    <!-- Кнопка для выбора файла расписания -->
+    <Button fx:id="loadFileButton" text="Загрузить расписание" onAction="#loadScheduleFile" style="-fx-padding: 10px 20px; -fx-font-size: 14px; -fx-background-color: #2196F3; -fx-text-fill: white;" />
+
+    <Button fx:id="startButton" text="Начать уведомления" onAction="#startNotifications" style="-fx-padding: 10px 20px; -fx-font-size: 14px; -fx-background-color: #4CAF50; -fx-text-fill: white;" />
+    <Button fx:id="stopButton" text="Остановить уведомления" onAction="#stopNotifications" style="-fx-padding: 10px 20px; -fx-font-size: 14px; -fx-background-color: #f44336; -fx-text-fill: white;" />
+    <Button fx:id="pauseButton" text="Пауза" onAction="#pauseNotifications" style="-fx-padding: 10px 20px; -fx-font-size: 14px; -fx-background-color: #FF9800; -fx-text-fill: white;" />
+    <Button fx:id="resumeButton" text="Возобновить" onAction="#resumeNotifications" style="-fx-padding: 10px 20px; -fx-font-size: 14px; -fx-background-color: #8BC34A; -fx-text-fill: white;" />
+
+    <TextField fx:id="intervalTextField" layoutX="20" layoutY="180" promptText="Интервал в минутах"/>
+    <Button layoutX="150" layoutY="180" text="Установить интервал" onAction="#setNotificationInterval"/>
+</VBox>
