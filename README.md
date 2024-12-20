@@ -5,7 +5,7 @@
 > Лабораторные работы по дисциплине __"Технология программирования"__
 > > бОИС-221 Сенцов Д.С.
 - [x] Фигуры с декором
-- ["Сколько до пары" (Task 1)]([https://github.com/gedjien/bois221_javafx_sn/tree/Task1_Shape](https://github.com/gedjien/bois221_javafx_sn/tree/prTask_NowLesson))
+- ["Сколько до пары" (Task 1)](https://github.com/gedjien/bois221_javafx_sn/tree/prTask_NowLesson)
 - ["Погоня за фигурами" (Task 2)](https://github.com/gedjien/bois221_javafx_sn/edit/prTask_Сhase-for-figures)
 - ["Таймер времени" (Task 3)](https://github.com/gedjien/bois221_javafx_sn/tree/prTask_TimerServer)
 
