@@ -5,17 +5,49 @@
 > Лабораторные работы по дисциплине __"Технология программирования"__
 > > бОИС-221 Сенцов Д.С.
 - [x] Фигуры с декором
-- [Абстрактный суперкласс (Task 1)](https://github.com/gedjien/bois221_javafx_sn/tree/Task1_Shape)
-- [Фабричный метод (Task 2)](https://github.com/gedjien/bois221_javafx_sn/tree/Task2_Factory)
-- [Хранитель (Task 3)](https://github.com/gedjien/bois221_javafx_sn/tree/Task3_Memento)
-- [Прототип (Task 6)](https://github.com/gedjien/bois221_javafx_sn/tree/Task6_prototype)
-- [Декоратор (Task 8)](https://github.com/gedjien/bois221_javafx_sn/tree/Task8_decorator)
-- [x] Итератор по слайдам
-- [Итератор (Task 4)](https://github.com/gedjien/bois221_javafx_sn/tree/Task4_SlideShowIterator)
-- [Абстрактная фабрика (Task 5)](https://github.com/gedjien/bois221_javafx_sn/tree/Task5_IndicatorApp)
-- [x] Демонстрация структур данных
-- [Наблюдатель (Task 7)](https://github.com/gedjien/bois221_javafx_sn/tree/Task7_observer)
-- [Адаптер (Task 10)](https://github.com/gedjien/bois221_javafx_sn/tree/Task10_adapter)
-- [ ] Прочее
-- [Стратегия (Task 9. Стратегия)](https://github.com/gedjien/bois221_javafx_sn/tree/Task9_strategy)
-- [Калькулятор (Task 0. Делегирование)](https://github.com/gedjien/bois221_javafx_sn/tree/Task0_TipCalculator)
+- ["Сколько до пары" (Task 1)]([https://github.com/gedjien/bois221_javafx_sn/tree/Task1_Shape](https://github.com/gedjien/bois221_javafx_sn/tree/prTask_NowLesson))
+- ["Погоня за фигурами" (Task 2)](https://github.com/gedjien/bois221_javafx_sn/edit/prTask_Сhase-for-figures)
+- ["Таймер времени" (Task 3)](https://github.com/gedjien/bois221_javafx_sn/tree/prTask_TimerServer)
+
+# "Таймер времени"
+
+Программа предназначена для управления  микроклиматом, используя сигналы с сервера тактовых импульсов (Pulse Server).
+
+
+## Сценарий использования
+
+Имеется сервер тактовых импульсов (Pulse Server), с которого компоненты системы управления микроклиматом получают сигналы для корректировки своего времени.
+
+иимтируются такты синхронизации, т.е. сигнал через фиксированный промежуток времени
+ 
+Датчики температуры и влажности: 
+         Измеряет температуру через заданное число тиков и отправляет уведомления о результатах измерений.
+
+Датчик освещенности: 
+         Включает свет, распылители и прочее оборудование через заданный интервал тиков, например, включаясь и выключаясь в определенное время суток
+          
+Система вентиляции:
+         Регулирует скорость вентиляции в соответствии с заданным графиком и полученными данными от датчиков.
+
+Система освещения:
+          Регулирует интенсивность и время работы освещения в соответствии с заданным графиком и полученными данными от датчиков.
+
+
+## Архитектура приложения
+
+Паттерн "Наблюдатель" для связи компонетов и сервера
+
+
+
+## Реализация
+
+Паттерн Наблюдатель, Строитель, ...
+
+
+## Проверка соотвествия
+
+Проверка работы программы в разных сценариях, например, при изменении времени на Pulse Server, при подключении и отключении компонентов.
+
+Проверка работоспособности компонентов в заданных условиях.
+
+Проверка корректности отображения времени на всех компонентах.
