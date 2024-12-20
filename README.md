@@ -6,7 +6,7 @@
 > > бОИС-221 Сенцов Д.С.
 - [x] Фигуры с декором
 - ["Сколько до пары" (Task 1)](https://github.com/gedjien/bois221_javafx_sn/tree/prTask_NowLesson)
-- ["Погоня за фигурами" (Task 2)](https://github.com/gedjien/bois221_javafx_sn/edit/prTask_Сhase-for-figures)
+- ["Погоня за фигурами" (Task 2)](https://github.com/gedjien/bois221_javafx_sn/tree/prTask_%D0%A1hase-for-figures)
 - ["Таймер времени" (Task 3)](https://github.com/gedjien/bois221_javafx_sn/tree/prTask_TimerServer)
 
 # "Таймер времени"
