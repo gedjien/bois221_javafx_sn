@@ -5,17 +5,42 @@
 > Лабораторные работы по дисциплине __"Технология программирования"__
 > > бОИС-221 Сенцов Д.С.
 - [x] Фигуры с декором
-- [Абстрактный суперкласс (Task 1)](https://github.com/gedjien/bois221_javafx_sn/tree/Task1_Shape)
-- [Фабричный метод (Task 2)](https://github.com/gedjien/bois221_javafx_sn/tree/Task2_Factory)
-- [Хранитель (Task 3)](https://github.com/gedjien/bois221_javafx_sn/tree/Task3_Memento)
-- [Прототип (Task 6)](https://github.com/gedjien/bois221_javafx_sn/tree/Task6_prototype)
-- [Декоратор (Task 8)](https://github.com/gedjien/bois221_javafx_sn/tree/Task8_decorator)
-- [x] Итератор по слайдам
-- [Итератор (Task 4)](https://github.com/gedjien/bois221_javafx_sn/tree/Task4_SlideShowIterator)
-- [Абстрактная фабрика (Task 5)](https://github.com/gedjien/bois221_javafx_sn/tree/Task5_IndicatorApp)
-- [x] Демонстрация структур данных
-- [Наблюдатель (Task 7)](https://github.com/gedjien/bois221_javafx_sn/tree/Task7_observer)
-- [Адаптер (Task 10)](https://github.com/gedjien/bois221_javafx_sn/tree/Task10_adapter)
-- [ ] Прочее
-- [Стратегия (Task 9. Стратегия)](https://github.com/gedjien/bois221_javafx_sn/tree/Task9_strategy)
-- [Калькулятор (Task 0. Делегирование)](https://github.com/gedjien/bois221_javafx_sn/tree/Task0_TipCalculator)
+- ["Сколько до пары" (Task 1)](https://github.com/gedjien/bois221_javafx_sn/tree/Task1_Shape)
+- ["Погоня за фигурами" (Task 2)](https://github.com/gedjien/bois221_javafx_sn/edit/prTask_Сhase-for-figures)
+- ["Таймер времени" (Task 3)](https://github.com/gedjien/bois221_javafx_sn/tree/Task3_Memento)
+
+# "Погоня за фигурами"
+
+Программа предназначена для обучения детей (возраст 3-6 лет) различать геометрические фигуры (круг, квадрат, треугольник, прямоугольник) в игровой форме.
+
+
+## Сценарий использования
+
+ На фоне изображения (например, поля, леса) отображаются фигуры (круг, квадрат, треугольник, прямоугольник).
+ 
+ Фигуры движутся по экрану (по заданному сценарию или случайно). и могут отличаться по размеру, цвету и расположению.  
+ 
+ Игрок управляет персонажем (например, машинкой, зверушкой) с помощью кнопок или сенсорного экрана.
+ 
+ Задача игрока: догнать заданную фигуру и "поймать" ее, нажав на соответствующую кнопку или на экране.
+ 
+ После успешного "поимки" фигуры, игрок получает балл и появляется новая фигура для поимки.
+ 
+ По мере прохождения игры, скорость движения фигур увеличивается, добавляются новые фигуры (например, пятиугольник, шестиугольник).
+
+ Предусмотреть возможность различных настроек:
+ 
+     Выбор уровня сложности (количество фигур, скорость движения).
+     Выбор цветовой гаммы игры.
+
+## Архитектура приложения
+
+Модель-Представление-Контроллер 
+
++  обработки событий мыши
+
+## Реализация
+
+Модель фигур реализует абстрактный суперкласс, фабрику для создания фигур
+
+Паттерн Momento, Прототип, Команда
