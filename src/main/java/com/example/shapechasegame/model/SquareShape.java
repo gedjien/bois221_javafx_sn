@@ -7,6 +7,7 @@ public class SquareShape extends ShapeModel {
 
     public SquareShape(double x, double y, Color color, double size) {
         super(x, y, color, size);
+        this.shapeType = ShapeType.SQUARE;
         shape = new Rectangle(size, size);
         shape.setFill(color);
         shape.setTranslateX(x);

@@ -7,6 +7,7 @@ public class HexagonShape extends ShapeModel {
 
     public HexagonShape(double x, double y, Color color, double size) {
         super(x, y, color, size);
+        this.shapeType = ShapeType.HEXAGON;
         Polygon polygon = new Polygon();
         double centerX = 0;
         double centerY = 0;

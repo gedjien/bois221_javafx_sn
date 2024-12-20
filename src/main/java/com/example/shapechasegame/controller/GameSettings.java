@@ -1,16 +1,24 @@
 package com.example.shapechasegame.controller;
 
-import javafx.scene.paint.Color; // Добавляем импорт для Color
+import javafx.scene.paint.Color;
+import com.example.shapechasegame.model.ShapeType;
 
 public class GameSettings {
     private static String difficulty = "Средний";
     private static String colorScheme = "Светлая";
     private static String movementType = "Плавное перемещение"; // Тип перемещения
-
+    private static ShapeType playerShapeType = ShapeType.CIRCLE;
     private static double speedMultiplier;
 
     static {
         updateSpeedMultiplier();
+    }
+    public static void setPlayerShapeType(ShapeType shapeType) {
+        playerShapeType = shapeType;
+    }
+
+    public static ShapeType getPlayerShapeType() {
+        return playerShapeType;
     }
 
     public static void setDifficulty(String difficulty) {

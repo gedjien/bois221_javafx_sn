@@ -22,10 +22,9 @@ public class GameView {
     }
 
     private void initializeShapes() {
-        addNewShape();
-        addNewShape();
-        addNewShape();
-        addNewShape();
+        for(int i = 0; i < 4; i++) { // Добавляем 4 фигуры по умолчанию
+            addNewShape();
+        }
     }
 
     public Pane getRoot() {
@@ -58,7 +57,7 @@ public class GameView {
     private ShapeModel createRandomShape(double size) {
         double x = size + random.nextDouble() * (800 - 2 * size);
         double y = size + random.nextDouble() * (600 - 2 * size);
-        Color color = GameSettings.getRandomColor(); // Используем новый метод для получения цвета
+        Color color = GameSettings.getRandomColor();
 
         switch (random.nextInt(6)) {
             case 0:
@@ -74,7 +73,7 @@ public class GameView {
             case 5:
                 return new HexagonShape(x, y, color, size);
             default:
-                return new CircleShape(x, y, color, size);  // Базовая форма по умолчанию
+                return new CircleShape(x, y, color, size);
         }
     }
 }

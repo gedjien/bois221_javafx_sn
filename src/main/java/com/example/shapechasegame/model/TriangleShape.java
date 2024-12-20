@@ -7,6 +7,7 @@ public class TriangleShape extends ShapeModel {
 
     public TriangleShape(double x, double y, Color color, double size) {
         super(x, y, color, size);
+        this.shapeType = ShapeType.TRIANGLE;
         Polygon polygon = new Polygon();
         polygon.getPoints().addAll(
                 0.0, 0.0,

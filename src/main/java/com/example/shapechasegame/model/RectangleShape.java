@@ -7,6 +7,7 @@ public class RectangleShape extends ShapeModel {
 
     public RectangleShape(double x, double y, Color color, double size) {
         super(x, y, color, size);
+        this.shapeType = ShapeType.HEXAGON;
         shape = new Rectangle(size * 1.5, size);
         shape.setFill(color);
         shape.setTranslateX(x);

@@ -7,6 +7,7 @@ public class PentagonShape extends ShapeModel {
 
     public PentagonShape(double x, double y, Color color, double size) {
         super(x, y, color, size);
+        this.shapeType = ShapeType.PENTAGON;
         Polygon polygon = new Polygon();
         polygon.getPoints().addAll(
                 0.0, 0.0,

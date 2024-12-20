@@ -1,3 +1,4 @@
+// src/main/java/com/example/shapechasegame/model/ShapeModel.java
 package com.example.shapechasegame.model;
 
 import javafx.scene.paint.Color;
@@ -12,6 +13,7 @@ public abstract class ShapeModel {
     protected Color color;
     protected double size;
     protected Shape shape;
+    protected ShapeType shapeType; // Добавлено поле ShapeType
 
     public ShapeModel(double x, double y, Color color, double size) {
         this.x = x;
@@ -41,5 +43,9 @@ public abstract class ShapeModel {
 
     public double getVelocityY() {
         return velocityY;
+    }
+
+    public ShapeType getShapeType() {
+        return shapeType;
     }
 }

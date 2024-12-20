@@ -9,6 +9,7 @@ public class CircleShape extends ShapeModel {
 
     public CircleShape(double x, double y, Color color, double size) {
         super(x, y, color, size);
+        this.shapeType = ShapeType.CIRCLE;
         shape = new Circle(size);
         shape.setFill(color);
         shape.setTranslateX(x);
