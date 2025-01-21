@@ -73,3 +73,4 @@ UpdateCallback.java интерфейс обратного вызова, кото
 Фабричный метод, Наблюдатель
 
 ## Диаграмма классов
+![class diagram](schdulealert.png)
