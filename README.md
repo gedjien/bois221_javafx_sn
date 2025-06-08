@@ -6,7 +6,7 @@
 > > бОИС-221 Сенцов Д.С.
 - [x] Лабораторные работы
 - ["DAO" (Task 8A)](https://github.com/gedjien/bois221_javafx_sn/tree/prTask_NowLesson)
-- ["Цепочка обязанностей" (Task 14)](https://github.com/gedjien/bois221_javafx_sn/tree/prTask_%D0%A1hase-for-figures)
+- ["Цепочка обязанностей" (Task 14)](https://github.com/gedjien/bois221_javafx_sn/tree/Task14_ChainOfResponsibilities)
 - ["Command" (Task 16)](https://github.com/gedjien/bois221_javafx_sn/tree/prTask_TimerServer)
 
 # "Цепочка обязанностей"
