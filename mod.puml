@@ -1,0 +1,15 @@
+@startuml
+class model.game_politics {
+- int generationmoney()
++ int[] playgame()
++ boolean balance_check(int)
+}
+
+class model.wallet {
+- int capital
++ int getCapital()
++ void setCapital(int)
+}
+
+
+@enduml

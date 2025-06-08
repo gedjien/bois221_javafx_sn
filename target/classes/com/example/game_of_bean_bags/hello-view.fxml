@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.game_of_bean_bags.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="balanceLabel" text="Баланс: 0 монет"/>
+    
+    <HBox alignment="CENTER" spacing="10">
+        <Button text="Добавить монетку" onAction="#onPay"/>
+        <Button fx:id="informationButton" text="?" onAction="#OnActioninformationButton"/>
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="20">
+        <ImageView fx:id="bag1" fitWidth="100" fitHeight="100" onMouseClicked="#onBagClick"/>
+        <ImageView fx:id="bag2" fitWidth="100" fitHeight="100" onMouseClicked="#onBagClick"/>
+        <ImageView fx:id="bag3" fitWidth="100" fitHeight="100" onMouseClicked="#onBagClick"/>
+    </HBox>
+
+</VBox>
