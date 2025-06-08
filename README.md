@@ -4,18 +4,27 @@
 > [!IMPORTANT]
 > Лабораторные работы по дисциплине __"Технология программирования"__
 > > бОИС-221 Сенцов Д.С.
-- [x] Фигуры с декором
-- [Абстрактный суперкласс (Task 1)](https://github.com/gedjien/bois221_javafx_sn/tree/Task1_Shape)
-- [Фабричный метод (Task 2)](https://github.com/gedjien/bois221_javafx_sn/tree/Task2_Factory)
-- [Хранитель (Task 3)](https://github.com/gedjien/bois221_javafx_sn/tree/Task3_Memento)
-- [Прототип (Task 6)](https://github.com/gedjien/bois221_javafx_sn/tree/Task6_prototype)
-- [Декоратор (Task 8)](https://github.com/gedjien/bois221_javafx_sn/tree/Task8_decorator)
-- [x] Итератор по слайдам
-- [Итератор (Task 4)](https://github.com/gedjien/bois221_javafx_sn/tree/Task4_SlideShowIterator)
-- [Абстрактная фабрика (Task 5)](https://github.com/gedjien/bois221_javafx_sn/tree/Task5_IndicatorApp)
-- [x] Демонстрация структур данных
-- [Наблюдатель (Task 7)](https://github.com/gedjien/bois221_javafx_sn/tree/Task7_observer)
-- [Адаптер (Task 10)](https://github.com/gedjien/bois221_javafx_sn/tree/Task10_adapter)
-- [ ] Прочее
-- [Стратегия (Task 9. Стратегия)](https://github.com/gedjien/bois221_javafx_sn/tree/Task9_strategy)
-- [Калькулятор (Task 0. Делегирование)](https://github.com/gedjien/bois221_javafx_sn/tree/Task0_TipCalculator)
+- [x] Лабораторные работы
+- ["DAO" (Task 8A)](https://github.com/gedjien/bois221_javafx_sn/tree/prTask_NowLesson)
+- ["Цепочка обязанностей" (Task 14)](https://github.com/gedjien/bois221_javafx_sn/tree/prTask_%D0%A1hase-for-figures)
+- ["Command" (Task 16)](https://github.com/gedjien/bois221_javafx_sn/tree/prTask_TimerServer)
+
+# "Цепочка обязанностей"
+
+Паттерн Цепочка обязанностей позволяет избежать привязки отправителя запроса к его получателю, давая шанс обработать запрос нескольким  связанным объектам, передавая запрос вдоль этой цепочки, пока его не обработают.
+
+
+## Функуиональные требования
+
+**Требуется создать  игровой автомат со следующим геймплеем:**
+ 
+Пользователю предлагается три мешочка (один из которых якобы выигрышный), пользователь выбирает мешочек 
+
+либо в нем нет монеток - он проиграл, тогда он может снова кинуть монетку для продолжения игры, 
+
+либо  в нем есть монетки -  пользователь может забрать выигрыш и закончить игру или  может снова играть на выигранное.
+
+Конечно, никто не планирует эти мешочки заполнять случайным образом, и определение удача/неудача  никак не зависит от выбранной картинки на экране. Поэтому обработка одинакова для всех кнопок, а вот стратегия по отношению к пользователю может быть различна - "удержать", "обобрать", "дать надежду" и может зависеть от продолжительности игры, активности пользователя и т.п.
+
+## Диаграмма классов
+![class diagram](img.png)
