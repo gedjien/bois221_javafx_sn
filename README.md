@@ -5,7 +5,7 @@
 > Лабораторные работы по дисциплине __"Технология программирования"__
 > > бОИС-221 Сенцов Д.С.
 - [x] Лабораторные работы
-- ["DAO" (Task 8A)](https://github.com/gedjien/bois221_javafx_sn/tree/prTask_NowLesson)
+- ["DAO" (Task 8A)](https://github.com/gedjien/bois221_javafx_sn/tree/Task_8A_DAO)
 - ["Цепочка обязанностей" (Task 14)](https://github.com/gedjien/bois221_javafx_sn/tree/Task14_ChainOfResponsibilities)
 - ["Command" (Task 16)](https://github.com/gedjien/bois221_javafx_sn/tree/prTask_TimerServer)
 
