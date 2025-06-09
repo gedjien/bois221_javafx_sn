@@ -1,0 +1,16 @@
+model\Task.class
+com\example\task_8a_dao\dao\JsonTaskDAO.class
+model\TaskDAO.class
+com\example\task_8a_dao\dao\FileTaskDAO.class
+com\example\task_8a_dao\dao\TaskDAO.class
+com\example\task_8a_dao\dao\ListTaskDAO.class
+model\FileTaskDAO.class
+com\example\task_8a_dao\HelloApplication.class
+com\example\task_8a_dao\HelloController.class
+model\PostgresTaskDAO.class
+com\example\task_8a_dao\dao\TaskFactory.class
+module-info.class
+com\example\task_8a_dao\model\Task.class
+com\example\task_8a_dao\dao\DbTaskDAO.class
+model\ListTaskDAO.class
+model\TaskFabrica.class
