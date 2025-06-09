@@ -4,18 +4,47 @@
 > [!IMPORTANT]
 > Лабораторные работы по дисциплине __"Технология программирования"__
 > > бОИС-221 Сенцов Д.С.
-- [x] Фигуры с декором
-- [Абстрактный суперкласс (Task 1)](https://github.com/gedjien/bois221_javafx_sn/tree/Task1_Shape)
-- [Фабричный метод (Task 2)](https://github.com/gedjien/bois221_javafx_sn/tree/Task2_Factory)
-- [Хранитель (Task 3)](https://github.com/gedjien/bois221_javafx_sn/tree/Task3_Memento)
-- [Прототип (Task 6)](https://github.com/gedjien/bois221_javafx_sn/tree/Task6_prototype)
-- [Декоратор (Task 8)](https://github.com/gedjien/bois221_javafx_sn/tree/Task8_decorator)
-- [x] Итератор по слайдам
-- [Итератор (Task 4)](https://github.com/gedjien/bois221_javafx_sn/tree/Task4_SlideShowIterator)
-- [Абстрактная фабрика (Task 5)](https://github.com/gedjien/bois221_javafx_sn/tree/Task5_IndicatorApp)
-- [x] Демонстрация структур данных
-- [Наблюдатель (Task 7)](https://github.com/gedjien/bois221_javafx_sn/tree/Task7_observer)
-- [Адаптер (Task 10)](https://github.com/gedjien/bois221_javafx_sn/tree/Task10_adapter)
-- [ ] Прочее
-- [Стратегия (Task 9. Стратегия)](https://github.com/gedjien/bois221_javafx_sn/tree/Task9_strategy)
-- [Калькулятор (Task 0. Делегирование)](https://github.com/gedjien/bois221_javafx_sn/tree/Task0_TipCalculator)
+- [x] Лабораторные работы
+- ["DAO" (Task 8A)](https://github.com/gedjien/bois221_javafx_sn/tree/prTask_NowLesson)
+- ["Цепочка обязанностей" (Task 14)](https://github.com/gedjien/bois221_javafx_sn/tree/Task14_ChainOfResponsibilities)
+- ["Command" (Task 16)](https://github.com/gedjien/bois221_javafx_sn/tree/prTask_TimerServer)
+
+# "DAO"
+
+Паттерн DAO необходим для изменения базового механизма персистентности, т.е. изменения вносятся в уровень DAO, а не в нужные места кода на бизнес-уровне. Также очень важно, чтобы никакие детали базового механизма, связанного с БД, не просачивались из уровня DAO в логику самого приложения. 
+
+![class diagram](gif.gif)
+
+## Функуиональные требования
+
+Основные функции программы:
+
+Хранение и обновление информации о работе.
+
+Поиск данных, хранимых в базе данных и представление их в виде, удобном для пользователя.
+
+Системные требования: разделение основной логики программы и управления доступом к данным, что позволит использовать в качестве репозитория для хранения данных - коллекцию, файл и БД.
+
+## Нефункциональные требования:
+
+Установка/изменение статуса работы;
+
+Поиск и сортировка работ по критериям - исполнитель/дата заверешения/прочие.
+
+## Диаграмма классов
+
+В папке dao:
+TaskDAO.java - интерфейс, определяющий основные операции с задачами
+ListTaskDAO.java - реализация для хранения задач в памяти
+FileTaskDAO.java - реализация для хранения задач в текстовом файле
+JsonTaskDAO.java - реализация для хранения задач в JSON файле
+TaskFactory.java - фабрика для создания нужного типа DAO
+В папке model:
+Task.java - класс, представляющий задачу с полями:
+id (идентификатор)
+name (название)
+time (время)
+context (контекст)
+status (статус)
+
+![class diagram](img.png)
